@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño con Position</title>
+    <style>
+		/* Reset básico */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		/* General */
+		body {
+			font-family: Arial, sans-serif;
+			position: relative;
+		}
+
+		/* Header */
+		header {
+			background-color: #6495ed;
+			width: 100%;
+			height: 100px;
+			position: relative;
+			margin-bottom: 10px;
+		}
+
+		/* Contenedor principal */
+		.container {
+			position: relative;
+			height: 300px;
+			width: 100%;
+		}
+
+		/* Figura izquierda */
+		.left {
+			background-color: #d3d3d3;
+			width: 40%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		/* Figura derecha */
+		.right {
+			background-color: #4545e2;
+			width: 60%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 40%;
+		}
+
+		/* Figuras internas en la derecha */
+		.inner {
+			background-color: #75d6d6;
+			width: 80%;
+			height: 40%;
+			position: absolute;
+			left: 10%;
+		}
+
+		.top {
+			top: 10%;
+		}
+
+		.bottom {
+			top: 55%;
+		}
+
+		/* Figura inferior */
+		footer {
+			background-color: #a52a2a;
+			width: 100%;
+			height: 150px;
+			position: relative;
+			margin-top: 10px;
+		}
+
+	</style>
+</head>
+<body>
+    <header></header>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right">
+            <div class="inner top"></div>
+            <div class="inner bottom"></div>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+</html>
