@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tarjetas de Producto</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+				margin: 0;
+				background-color: #f9f9f9;
+			}
+
+			.container { display: flex; gap: 20px; }
+
+			.card {
+				width: 250px;
+				background-color: #fff;
+				border-radius: 10px;
+				box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+				overflow: hidden;
+				text-align: center;
+				transition: transform 0.3s, background-color 0.3s;
+			}
+			
+			.img-article { background-color: white; }
+
+			.card img {
+				width: 250px;
+				height: 150px;
+				/* Mantiene el aspecto original de la imagen */
+				object-fit: contain;
+				/* Opcional: fija la proporción, como 4:3 o 1:1 */
+  				aspect-ratio: 4 / 3;
+			}
+
+			.card .content { padding: 20px; }
+			.card .content h3 { margin: 0; font-size: 18px; }
+
+			.card .content p {
+				font-size: 14px;
+				color: #666;
+				margin: 10px 0;
+			}
+
+			.card .content .price { font-size: 20px; margin: 10px 0; }
+			.card .content .stars { color: #ffc107; margin: 10px 0; }
+
+			.card .button {
+				display: block;
+				width: 100%;
+				padding: 10px 0;
+				font-size: 16px;
+				font-weight: bold;
+				color: #fff;
+				text-decoration: none;
+				background-color: teal;
+				transition: background-color 0.3s;
+			}
+
+			/* Botones especificos */
+			.card.teal:hover { background-color: teal; }
+			.card.red:hover { background-color: red; }
+			.card.orange:hover { background-color: orange; }
+
+			.card.teal .button { background-color: teal; }
+			.card.red .button { background-color: red; }
+			.card.orange .button { background-color: orange; }
+			.card:hover { transform: translateY(-10px); }
+			
+			/* Color del texto */
+			.card.teal:hover .content p { color: white; }
+			.card.red:hover .content p { color: white; }
+			.card.orange:hover .content p { color: white; }
+			
+			/* Corrige el color de la estrella del color orange */
+			.card.orange:hover .stars { color: white; }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="card teal">
+				<div class="img-article"><img src="img/reloj.jpg" alt="Reloj"/></div>
+				<div class="content">
+					<h3>GARNIER</h3>
+					<p>Garnier Pure Active Micellar Cleansing Water. 125 ml</p>
+					<div class="price">$60</div>
+					<div class="stars">★★★★☆</div>
+				</div>
+				<a href="#" class="button">ADD TO CART</a>
+			</div>
+			<div class="card red">
+				<div class="img-article"><img src="img/shoes.jpg" alt="Reloj"/></div>
+				<div class="content">
+					<h3>GARNIER</h3>
+					<p>Garnier Pure Active Micellar Cleansing Water. 125 ml</p>
+					<div class="price">$60</div>
+					<div class="stars">★★★☆☆</div>
+				</div>
+				<a href="#" class="button">ADD TO CART</a>
+			</div>
+			<div class="card orange">
+				<div class="img-article"><img src="img/tshirt.jpg" alt="Reloj"/></div>
+				<div class="content">
+					<h3>GARNIER</h3>
+					<p>Garnier Pure Active Micellar Cleansing Water. 125 ml</p>
+					<div class="price">$15</div>
+					<div class="stars">★★★☆☆</div>
+				</div>
+				<a href="#" class="button">ADD TO CART</a>
+			</div>
+		</div>
+	</body>
+</html>
