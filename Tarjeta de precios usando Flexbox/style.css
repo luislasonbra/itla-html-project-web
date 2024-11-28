@@ -1,0 +1,124 @@
+/* General Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #4a3fbd;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 2rem;
+}
+
+/* Container */
+.pricing-container {
+	text-align: center;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.header .subtitle {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 14px;
+	margin-bottom: 0.5rem;
+}
+
+.header h1 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+
+/* Cards */
+.cards {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+	align-items: end;
+}
+
+.card {
+	flex: 1;
+	color: #333;
+	display: flex;
+	padding: 2rem;
+	max-width: 300px;
+	background: #fff;
+	border-radius: 8px;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card.popular {
+	/* border: 2px solid #ffe4d3; */
+	padding: 0px;
+	padding-bottom: 50px;
+}
+
+.badge {
+	padding: 10px;
+	color: #8769bc;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	background: #ffe4d3;
+	text-transform: uppercase;
+}
+
+.emoji {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+.card h2 {
+	color: #e4cf9d;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.price {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #4a3fbd;
+	margin-bottom: 1rem;
+}
+
+.price .number {
+	font-size: 50px;
+}
+
+.features {
+	list-style: none;
+	margin-bottom: 1.5rem;
+}
+
+.features li {
+	margin: 0.5rem 0;
+}
+
+.card .btn {
+	text-decoration: none;
+	color: #4a3fbd;
+	padding: 1.0rem 3.5rem;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: background-color 0.3s;
+}
+
+.card.popular .btn {
+	color: #fff;
+	background-color: #4a3fbd;
+	/* border-radius: 20px; */
+}
+
+.card.popular .btn:hover {
+	background-color: #372e9a;
+}
